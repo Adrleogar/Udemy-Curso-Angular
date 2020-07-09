@@ -6,12 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  showPassword = false;
-  log = [];
-
-    TogglePassword(){
-    this.showPassword = !this.showPassword
-      this.log.push(this.log.length +1)
-
-}
+  title = 'ProyectoSeccion4';
 }

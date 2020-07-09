@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ol>
+        <li>Add A button which says 'Display Details'</li>
+        <li>Add a paragraph with any content of your choice (e.g. 'Secret Password = tuna')</li>
+        <li>Toggle the displaying of that paragraph with the button created in the first step</li>
+        <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number)</li>
+        <li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) and white color (ngClass)</li>
+      </ol>
+      <br>
+        <button class = "btn btn-primary" (click)="ToggleDetails()">Toggle Details</button>
+
+        <p *ngIf="VisualizationOfDetails" [ngStyle]="{backgroundColor: 'green' , borderColor : 'white', color: 'white', textAlign: 'center' , borderWidth: 'thin'}">
+
+
+          <br>
+          <br>
+          I WANT TO CENTER THIS FUCKING MESSAGE PLEASE HELP
+
+          <br>
+          <br>Data is being Displayed. <br> <br>
+          This message has been showed {{Log.length/2 +0.5}} times.
+          <br><br>
+          <div>
+      </div>
+         The button has been clicked {{Log.length}} times.
+
+          <br><br>
+
+
+        <p *ngFor=" let LogItem of Log"
+        [ngStyle]="{backgroundColor: LogItem>5? 'blue': 'grey' , color: LogItem>5? 'white': 'black', border: '5px red', textAlign:'center'}"
+        >
+        The button has been clicked {{LogItem}} times, it was also clicked at WORK IN PROGRESS
+        </p>
+
+      </hl>
+    </div>
+  </div>
+</div>

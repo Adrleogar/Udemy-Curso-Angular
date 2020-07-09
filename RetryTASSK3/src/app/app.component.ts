@@ -4,14 +4,16 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+
+
 })
 export class AppComponent {
-  showPassword = false;
-  log = [];
+  VisualizationOfDetails  =false;
+  Log = [];
 
-    TogglePassword(){
-    this.showPassword = !this.showPassword
-      this.log.push(this.log.length +1)
+  ToggleDetails(){
+    this.VisualizationOfDetails =!this.VisualizationOfDetails;
+    this.Log.push(this.Log.length+1);
 
-}
+  }
 }

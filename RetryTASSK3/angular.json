@@ -121,6 +121,6 @@
   },
   "defaultProject": "my-first-app",
   "cli": {
-    "analytics": "8d8d0f12-dc9f-4ec8-aec0-8d7b2667c700"
+    "analytics": false
   }
 }
